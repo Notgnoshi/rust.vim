@@ -34,11 +34,12 @@ CompilerSet errorformat=
             \%-Gerror:\ aborting\ %.%#,
             \%-Gerror:\ Could\ not\ compile\ %.%#,
             \%-Gnote:\ %[rR]un\ with\ \`RUST_BACKTRACE=%.%#,
+            \%+E%.%#panicked\ at\ %f:%l:%c:,
+            \%+Cassertion%.%#,
             \%Eerror:\ %m,
             \%Eerror[E%n]:\ %m,
             \%Wwarning:\ %m,
-            \%C\ %#-->\ %f:%l:%c,
-            \%E\ \ left:%m,%C\ right:%m\ %f:%l:%c,%Z
+            \%C%\\s%#-->\ %f:%l:%c,
 
 " Old errorformat (before nightly 2016/08/10)
 CompilerSet errorformat+=
