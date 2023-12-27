@@ -32,7 +32,7 @@ augroup RustCargoQuickFixHooks
 augroup END
 
 " Ignore general cargo progress messages
-CompilerSet errorformat+=
+CompilerSet errorformat^=
             \%-G%\\s%#Downloading%.%#,
             \%-G%\\s%#Checking%.%#,
             \%-G%\\s%#Compiling%.%#,
