@@ -33,6 +33,7 @@ CompilerSet errorformat=
             \%-G,
             \%-Gerror:\ aborting\ %.%#,
             \%-Gerror:\ Could\ not\ compile\ %.%#,
+            \%-Gnote:\ %[rR]un\ with\ \`RUST_BACKTRACE=%.%#,
             \%Eerror:\ %m,
             \%Eerror[E%n]:\ %m,
             \%Wwarning:\ %m,

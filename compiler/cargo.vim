@@ -38,11 +38,17 @@ CompilerSet errorformat^=
             \%-G%\\s%#Compiling%.%#,
             \%-G%\\s%#Finished%.%#,
             \%-G%\\s%#Blocking\ waiting%.%#,
+            \%-G%\\s%#Running%.%#,
             \%-G%\\s%#error:\ Could\ not\ compile\ %.%#,
             \%-G%\\s%#To\ learn\ more\\,%.%#,
             \%-G%\\s%#For\ more\ information\ about\ this\ error\\,%.%#,
-            \%-Gnote:\ Run\ with\ \`RUST_BACKTRACE=%.%#,
-            \%.%#panicked\ at\ \\'%m\\'\\,\ %f:%l:%c
+            \%-Gwarning:%.%#generated\ %[0-9]%#\ warning%.%#,
+            \%-Gnote:\ %[rR]un\ with\ \`RUST_BACKTRACE=%.%#,
+            \%-Gtest\ %[%^\ ]%#\ ...\ %.%#,
+            \%-Gerror:\ test\ failed%.%#,
+            \%-Gtest\ result%.%#,
+            \%-Gfailures:,
+            \%-G----\ %[%^\ ]%#\ stdout\ ----
 
 " vint: -ProhibitAbbreviationOption
 let &cpo = s:save_cpo
