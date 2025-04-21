@@ -158,7 +158,7 @@ syn region    rustAttributeParenthesizedBrackets matchgroup=rustAttribute start=
 syn region    rustAttributeBalancedParens matchgroup=rustAttribute start="("rs=e end=")"re=s transparent contained contains=rustAttributeBalancedParens,@rustAttributeContents
 syn region    rustAttributeBalancedCurly matchgroup=rustAttribute start="{"rs=e end="}"re=s transparent contained contains=rustAttributeBalancedCurly,@rustAttributeContents
 syn region    rustAttributeBalancedBrackets matchgroup=rustAttribute start="\["rs=e end="\]"re=s transparent contained contains=rustAttributeBalancedBrackets,@rustAttributeContents
-syn cluster   rustAttributeContents contains=rustString,rustCommentLine,rustCommentBlock,rustCommentLineDocError,rustCommentBlockDocError
+syn cluster   rustAttributeContents contains=rustString,rustCommentLine,rustCommentLineDoc,rustCommentBlock,rustCommentBlockDoc,rustCommentLinesDocNonRustCode,rustCommentLinesDocRustCode,rustCommentBlockDocRustCode
 syn region    rustDerive      start="derive(" end=")" contained contains=rustDeriveTrait
 " This list comes from src/libsyntax/ext/deriving/mod.rs
 " Some are deprecated (Encodable, Decodable) or to be removed after a new snapshot (Show).
